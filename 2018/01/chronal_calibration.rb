@@ -21,5 +21,21 @@ class ChronalCalibration
   end
 
   def frequency_device_reaches_twice
+    @frequency_log = {}
+    @fequency_total = 0
+
+    # We loop over the list a until it lands on the same frequency twice.
+    while(true) do
+      @input.each do |frequency_change|
+        if @frequency_log[@fequency_total]
+          return @fequency_total
+        end
+
+        @frequency_log[@fequency_total] = true
+
+        @fequency_total += frequency_change
+
+      end
+    end
   end
 end
