@@ -27,9 +27,7 @@ class ChronalCalibration
     # We loop over the list a until it lands on the same frequency twice.
     loop do
       @input.each do |frequency_change|
-        if @frequency_log[@fequency_total]
-          return @fequency_total
-        end
+        return @fequency_total if @frequency_log[@fequency_total]
 
         @frequency_log[@fequency_total] = true
 
