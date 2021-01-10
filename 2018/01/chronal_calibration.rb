@@ -17,7 +17,7 @@ class ChronalCalibration
   end
 
   def combined_frequencies
-    @input.inject(&:+)
+    @input.sum
   end
 
   def frequency_device_reaches_twice
