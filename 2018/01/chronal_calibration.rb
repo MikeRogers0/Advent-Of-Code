@@ -6,5 +6,6 @@ class ChronalCalibration
   end
 
   def combined_frequencies
+    @input.inject(&:+)
   end
 end
