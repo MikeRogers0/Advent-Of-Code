@@ -21,17 +21,11 @@ describe ChronalCalibration do
 
       it { expect(subject).to eq(-6) }
     end
-
-    context "Where input is the (default) file input.txt" do
-      subject { described_class.new.combined_frequencies }
-      it { expect(subject).to eq(0) }
-    end
   end
 
-  describe "#input" do
-    subject { described_class.new.input }
+  describe "::part_one" do
+    subject { described_class.part_one }
 
-    it { expect(subject).to all(be_an(Integer)) }
-    it { expect(subject).to_not be_empty }
+    it { expect(subject).to eq(497) }
   end
 end
