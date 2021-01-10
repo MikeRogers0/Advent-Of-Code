@@ -8,10 +8,9 @@ describe ChronalCalibration do
   end
 
   describe "::part_two" do
-    pending
     subject { described_class.part_two }
 
-    #it { expect(subject).to eq(nil) }
+    it { expect(subject).to eq(558) }
   end
 
   describe "#combined_frequencies" do
