@@ -1,4 +1,4 @@
-class RomanToInteger
+class RomanNumeral
   CONVERSIONS = {
     'I': 1,
     'V': 5,
@@ -10,10 +10,6 @@ class RomanToInteger
   }
 
   attr_accessor :input
-
-  def self.convert_to_i(input)
-    new(input).to_i
-  end
 
   def initialize(input)
     @input = input
