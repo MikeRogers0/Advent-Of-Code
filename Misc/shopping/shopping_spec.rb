@@ -1,4 +1,4 @@
-require "./2000/1/shopping"
+require_relative "shopping"
 
 describe Shopping do
   describe "::get_number_of_options" do

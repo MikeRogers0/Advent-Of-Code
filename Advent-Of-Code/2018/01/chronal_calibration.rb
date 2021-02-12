@@ -1,5 +1,5 @@
 class ChronalCalibration
-  FILE_INPUT = File.read("./2018/01/input.txt").split("\n").collect(&:to_i)
+  FILE_INPUT = File.open( File.join(File.dirname(__FILE__), "input.txt") ).read.split("\n").collect(&:to_i)
 
   # Starting with a frequency of zero,
   # what is the resulting frequency after all of the changes in frequency have been applied?

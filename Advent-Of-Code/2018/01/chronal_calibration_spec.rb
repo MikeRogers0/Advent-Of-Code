@@ -1,4 +1,4 @@
-require "./2018/01/chronal_calibration"
+require_relative "chronal_calibration"
 
 describe ChronalCalibration do
   describe "::part_one" do
