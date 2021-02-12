@@ -12,7 +12,7 @@ class RomanNumeral
   attr_accessor :input
 
   def initialize(input)
-    @input = input
+    self.input = input
   end
 
   def to_i
