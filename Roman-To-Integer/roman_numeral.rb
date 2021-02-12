@@ -22,7 +22,7 @@ class RomanNumeral
   private
 
   # When our input is: IIV
-  # It returns values like:
+  #  It returns values like:
   # [-1, -1, 5]
   def input_with_modifier_integers
     input_as_literal_integers.each_with_index do |value, index|
@@ -37,5 +37,4 @@ class RomanNumeral
   def input_as_literal_integers
     @input_as_literal_integers ||= input.upcase.chars.collect { |letter| CONVERSIONS[letter.to_sym] }
   end
-
 end
