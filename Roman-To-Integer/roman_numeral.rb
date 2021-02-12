@@ -16,7 +16,7 @@ class RomanNumeral
   end
 
   def to_i
-    input_with_modifier_integers.sum
+    input_as_integer_with_modifiers.sum
   end
 
   private
@@ -24,7 +24,7 @@ class RomanNumeral
   # When our input is: IIV
   #  It returns values like:
   # [-1, -1, 5]
-  def input_with_modifier_integers
+  def input_as_integer_with_modifiers
     input_as_literal_integers.each_with_index do |value, index|
       next unless input_as_literal_integers[index + 1]
       next unless input_as_literal_integers[index + 1] > input_as_literal_integers[index]
