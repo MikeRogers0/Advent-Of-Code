@@ -1,7 +1,7 @@
 require_relative "roman_numeral"
 
 describe RomanNumeral do
-  describe "::new" do
+  describe "#to_i" do
     it { expect(described_class.new("I").to_i).to eq(1) }
     it { expect(described_class.new("III").to_i).to eq(3) }
     it { expect(described_class.new("IV").to_i).to eq(4) }
